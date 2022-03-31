@@ -1,0 +1,72 @@
+<html>
+<body>
+  <script src="./index.js" defer></script>
+  <link rel= "stylesheet" href="index.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Forms Review</title>
+      <h1>Which tea is best for me?</h1>
+      <section class="flavour">
+        <label for="flavour"> What flavour do you like?</label>
+        <input type="checkbox" name="flavour" id="sweet" value="sweet">
+        <label for="sweet">Sweet</label>
+        <input type="checkbox" name="flavour" id="floral" value="floral">
+        <label for="floral">Floral</label>
+        <input type="checkbox" name="flavour" id="bitter" value="bitter">
+        <label for="bitter">Bitter</label>
+        <input type="checkbox" name="flavour" id="delicate" value="delicate">
+        <label for="delicate">Delicate</label>
+        <input type="checkbox" name="flavour" id="smoky" value="smoky">
+        <label for="smoky">Smoky</label>
+      </section>
+      <hr>
+      <section class="stength">
+        <label for="strength">How strong do you like your tea?</label>
+        <br>
+        <span>Pale</span>
+        <input type="range" name="strength" id="strength" value="3" min="1" max="5">
+        <span>Builder's-brew</span>
+      </section>
+      <hr>
+
+      <section class="exotic">
+        <span>Would you like something normal or adventurous?</span>
+        <br>
+        <input type="radio" name="exotic" id="yes" value="yes">
+        <label for="yes">Normal</label>
+        <input type="radio" name="exotic" id="no" value="yes">
+        <label for="adventurous">Adventurous</label>
+      </section>
+      <hr>
+      <section class="caffeine">
+        <span>Caffeinated?</span>
+        <br>
+        <input type="radio" name="caffeine" id="yes please" value="yes">
+        <label for="yes please">Yes</label>
+        <input type="radio" name="caffeine" id="no thanks" value="yes">
+        <label for="no thanks">No</label>
+      </section>
+      <hr>
+      <section class="time">
+        <label for="time">What time of day?</label>
+        <select name="time" id="time">
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+          <option value="night">Night</option>
+        </select>
+      </section>
+      <hr>
+      <section class="extra-info">
+        <label for="extra">Any allergies?</label>
+        <br>
+        <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+      </section>
+      <hr>
+      <section class="submission">
+        <button onclick="ComputeTea()">Compute Tea</button>
+        <hr>
+        <div id="result"></div>
+      </section>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    background: #AFEEEE;
+  }
+  hr {
+    width: 90%;
+    position: center;
+    border-top: 1px solid grey;
+  }
+  #result {
+    color: blue;
+    font-size: 18px;
+    margin: 10px;
+  }
