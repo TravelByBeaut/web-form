@@ -1,11 +1,23 @@
 body {
     background: #AFEEEE;
+    position: center;
+    border: 5px solid black;
+    border-radius: 20%;
+    height: 520px;
+    width: 500px;
   }
   hr {
     width: 90%;
     position: center;
     border-top: 1px solid grey;
   }
+  h1 {
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+  section {
+    margin-left: 25px;
+  }  
   #result {
     color: blue;
     font-size: 18px;
