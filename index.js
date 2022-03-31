@@ -5,6 +5,16 @@ function ComputeTea() {
   const isDelicate = document.body.querySelector('#delicate').checked;
   const isSmoky = document.body.querySelector('#smoky').checked;
   
+  function computeTea() {
+	const resultsDiv = document.body.querySelector('#results-container');
+  resultsDiv.hidden = false;
+}
+
+function hideResults() {
+	const resultsDiv = document.body.querySelector('#results-container');
+  resultsDiv.hidden = true;
+}
+
   if(isSweet) {
   	  console.log('camomile');
   } else if(isFloral) {
