@@ -1,6 +1,5 @@
 function computeTea() {
     computeFlavour();
-    showResults();
     message();
     }
     
@@ -11,31 +10,22 @@ function computeTea() {
       const isDelicate = document.body.querySelector('#delicate').checked;
       const isSmoky = document.body.querySelector('#smoky').checked;  
       if(isSweet) {
-            console.log('camomile');
+            displayMessage('camomile');
       } else if(isFloral) {
-          console.log('jasmine' + img);
+          displayMessage('jasmine');
       } else if(isBitter) {
-          console.log('green tea');
+          displayMessage('green tea');
       } else if (isDelicate) {
-          console.log('white tea')
+          displayMessage('white tea')
       } else if (isSmoky) {
-          console.log('lapsong souchong')
+          displayMessage('lapsong souchong')
       } else {
-          console.log('please select a flavour')
+          displayMessage('please select a flavour')
       }
     }
-      
-          function showResults() {
-        const resultsDiv = document.body.querySelector('#results-container');
-      resultsDiv.hidden = false;
-      }
+    function displayMessage(message) {
+      document.getElementById('results').innerHTML = message;
     
-    function hideResults() {
-        const resultsDiv = document.body.querySelector('#results-container');
-      resultsDiv.hidden = true;
     }
-    function displayMesage(message) {
-        document.getElementById('results').innerHTML = message;
-      }
     
     

@@ -23,25 +23,12 @@ body {
   section {
     margin-left: 25px;
   }
-  #results-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    color: black;
-    font-size: 20px;
-    background: #AFEEEE;
-    padding-left: 2em;
-    padding-top: 2em;
+  #results {
+    padding: 20px;
+    color: blue;
+    font-size: 26px;
+    margin-left: 30%;
   }
   
-  #results {
-    background: white;
-    position: absolute;
-    width: 50vw;
-    height: 50vh;
-    border-radius: 20%;
-  }
   
   
